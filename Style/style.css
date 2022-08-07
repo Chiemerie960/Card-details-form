@@ -16,15 +16,22 @@ body {
   background: var(--LightGrayishViolet);
   background-image: url('../images/bg-main-desktop.png');
   background-repeat: no-repeat;
+  display: flex;
 }
-
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* align-items: center; */
+}
 .cardFront {
   width: 350px;
   height: 200px;
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 25px;
+  /* margin-bottom: 25px; */
   margin-left: 250px;
 }
 
@@ -62,4 +69,13 @@ body {
   width: fit-content;
   top: 80%;
   left: 80%;
+}
+.cardBack {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-left: 350px;
 }
