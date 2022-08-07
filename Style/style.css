@@ -45,6 +45,7 @@ body {
   top: 55%;
   left: 10%;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .cardFront .card-hr {
