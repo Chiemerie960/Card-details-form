@@ -24,7 +24,8 @@ body {
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 250px;
+  margin: 25px;
+  margin-left: 250px;
 }
 
 .cardFront .bg {
