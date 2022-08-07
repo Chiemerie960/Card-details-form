@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', 'Overpass', 'Roboto', 'Red Hat Display';
 }
 
 :root {
@@ -19,12 +19,12 @@ body {
 }
 
 .cardFront {
-  width: 400px;
+  width: 350px;
   height: 200px;
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 100px;
+  margin: 250px;
 }
 
 .cardFront .bg {
@@ -41,10 +41,9 @@ body {
 .cardFront .card-num {
   position: absolute;
   color: white;
-  width: fit-content;
   top: 55%;
   left: 10%;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .cardFront .card-hr {
