@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 3%, 87%);
+  --darkGrayishViolet: hsl(279, 6%, 55%);
+  --veryDarkViolet: hsl(278, 68%, 11%);
+  --fontSize: 18px
+}
+body {
+  background: var(--LightGrayishViolet);
+  background-image: url('../images/bg-main-desktop.png');
+  background-repeat: no-repeat;
+}
+.cardFront {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.cardFront img {
+  width: 100%;
+  height: 100%;
+}
+.cardFront .card-num {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
+.cardFront .card-hr {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
+.cardFront .date {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
