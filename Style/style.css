@@ -3,6 +3,7 @@
 * {
   font-family: 'Space Grotesk', sans-serif;
 }
+
 :root {
   --white: hsl(0, 0%, 100%);
   --LightGrayishViolet: hsl(270, 3%, 87%);
@@ -10,11 +11,13 @@
   --veryDarkViolet: hsl(278, 68%, 11%);
   --fontSize: 18px
 }
+
 body {
   background: var(--LightGrayishViolet);
   background-image: url('../images/bg-main-desktop.png');
   background-repeat: no-repeat;
 }
+
 .cardFront {
   width: 400px;
   height: 200px;
@@ -23,25 +26,39 @@ body {
   overflow: hidden;
   margin: 100px;
 }
+
 .cardFront .bg {
   width: 100%;
   height: 100%;
 }
+
 .cardFront .card-logo {
   position: absolute;
+  top: 5%;
+  left: 10%;
 }
+
 .cardFront .card-num {
   position: absolute;
   color: white;
   width: fit-content;
+  top: 55%;
+  left: 10%;
+  letter-spacing: 1px;
 }
+
 .cardFront .card-hr {
   position: absolute;
   color: white;
   width: fit-content;
+  top: 80%;
+  left: 10%;
 }
+
 .cardFront .date {
   position: absolute;
   color: white;
   width: fit-content;
+  top: 80%;
+  left: 80%;
 }
