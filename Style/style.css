@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-  font-family: 'Space Grotesk', 'Overpass', 'Roboto', 'Red Hat Display';
+  font-family: 'Space Grotesk', 'Overpass', 'Roboto', 'Red Hat Display', sans-serif;
 }
 
 :root {
@@ -13,26 +13,29 @@
 }
 
 body {
-  background: var(--LightGrayishViolet);
+  background: var(--white);
   background-image: url('../images/bg-main-desktop.png');
   background-repeat: no-repeat;
   display: flex;
 }
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  /* align-items: center; */
+  align-items: center;
 }
+
 .cardFront {
   width: 350px;
   height: 200px;
   position: relative;
   display: flex;
   overflow: hidden;
-  /* margin-bottom: 25px; */
-  margin-left: 250px;
+  margin-bottom: 25px;
+  /* border-radius: 15px; */
+  margin-left: 100px;
 }
 
 .cardFront .bg {
@@ -70,6 +73,7 @@ section {
   top: 80%;
   left: 80%;
 }
+
 .cardBack {
   width: 350px;
   height: 200px;
@@ -77,5 +81,42 @@ section {
   display: flex;
   overflow: hidden;
   margin-top: 25px;
-  margin-left: 350px;
+  margin-left: 250px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #666;
+}
+
+.cardBack img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardBack .cvc {
+  position: absolute;
+  color: var(--white);
+  top: 45%;
+  left: 79%;
+}
+
+.section2 {
+  flex-basis: 70%;
+  padding-left: 6rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  width: 200px;
+  padding: 5px;
 }
