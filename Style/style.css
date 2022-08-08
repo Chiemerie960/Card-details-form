@@ -9,7 +9,8 @@
   --LightGrayishViolet: hsl(270, 3%, 87%);
   --darkGrayishViolet: hsl(279, 6%, 55%);
   --veryDarkViolet: hsl(278, 68%, 11%);
-  --fontSize: 18px
+  --fontSize: 18px;
+  --color: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
 }
 
 body {
@@ -112,11 +113,41 @@ form {
 }
 
 input {
-  width: 200px;
+  width: 300px;
   padding: 5px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--LightGrayishViolet);
+  outline: none;
+  margin-bottom: 10px;
+}
+input:active,
+input:focus {
+  border: 1px solid var(--veryDarkViolet);
 }
 
 button {
-  width: 200px;
+  width: 310px;
   padding: 5px;
+  background: var(--veryDarkViolet);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+.exp_cvc {
+  display: flex;
+  gap: 2rem;
+}
+.exp_cvc .contain {
+  display: flex;
+  flex-direction: column;
+}
+.exp_cvc .contain span {
+  display: flex;
+}
+.exp_cvc .contain input {
+  width: 50px;
+}
+.cvcHr {
+  width: 130px !important;
 }
