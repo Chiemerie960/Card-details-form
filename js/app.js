@@ -4,6 +4,7 @@ let cardMnth = document.querySelector('.mnth')
 let cardYr = document.querySelector('.yr')
 let cvc = document.querySelector('.cvc-hr')
 
+let front = document.querySelector('.section2')
 cardNr.addEventListener('input', () => {
   function format(s) {
     return s.toString().replace(/\d{4}(?=.)/g, '$& ');
@@ -22,7 +23,12 @@ cardYr.addEventListener('input', () => {
 cvc.addEventListener('input', () => {
   document.querySelector('.cvc').innerHTML = cvc.value
 })
-
+document.querySelector('button').addEventListener('click', () => {
+  front.style.display = "none";
+  setTimeout(() => {
+    location.reload()
+  }, 5000)
+})
 
 
 
