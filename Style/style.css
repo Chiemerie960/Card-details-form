@@ -17,7 +17,9 @@ body {
   background: var(--white);
   background-image: url('../images/bg-main-desktop.png');
   background-repeat: no-repeat;
-  display: flex;
+}
+main {
+  display: flex;  
 }
 
 section {
