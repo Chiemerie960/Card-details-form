@@ -121,6 +121,6 @@ confirmButton.addEventListener("click", () => {
   }
 });
 continueButton.addEventListener("click", () => {
-  location.reload(true);
+  location.reload();
 });
 
