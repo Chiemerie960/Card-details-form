@@ -32,7 +32,7 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 body{
-    background-image: url("images/bg-main-desktop.png");
+    background-image: url("../images/bg-main-desktop.png");
     background-repeat: no-repeat;
     background-size: 500px 100%;
 }
@@ -61,7 +61,7 @@ input:focus{
 }
 .card-front{
     position: absolute;
-    background: url('images/bg-card-front.png') no-repeat;
+    background: url('../images/bg-card-front.png') no-repeat;
     background-size: cover;
     top: var(--front-top);
     left: var(--front-left);
@@ -107,7 +107,7 @@ input:focus{
 }
 .card-back{
     position: absolute;
-    background: url('images/bg-card-back.png') no-repeat;
+    background: url('../images/bg-card-back.png') no-repeat;
     background-size: cover;
     top: var(--back-top);
     left: var(--back-left);
@@ -230,7 +230,7 @@ input.active{
 }
 @media (max-width: 920px){
     body{
-        background-image: url("images/bg-main-mobile.png");
+        background-image: url("../images/bg-main-mobile.png");
         background-repeat: no-repeat;
         background-size: 100% 300px;
     }
